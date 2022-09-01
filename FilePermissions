@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Script:                       Ops 301 Ops Chall 02
+# Author:                       Courtney Johnson    
+# Date of latest revision:      08/31/2022 
+# Purpose:                      Prompts user for input directory path
+
+PathofFile=$filename
+
+echo "Please insert path here"
+read $filename
+
+echo "Insert file permissions"
+read chmod 777 $filename
+
+cd $filename
+
+ls -al
