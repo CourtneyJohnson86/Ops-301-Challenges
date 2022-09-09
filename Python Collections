@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+#Script Name    Python Collections
+#Author         Courtney Johnson
+#Date of last revision  09/09/2022
+#Declaration of variables 
+#Declaration of functions
+
+Shopping_List=""
+
+#Main
+#Assign to a variable a list of ten string elements.
+Shopping_List = ["apples", "grapes","oranges","watermelon","lemon","peaches","mango","strawberry","kiwi","dragon fruit"]
+#Print the fourth element of the list.
+print(Shopping_List[3]);
+#Print the sixth through tenth element of the list.
+print(Shopping_List[5:10]);
+#Change the value of the seventh element to “onion”.
+Shopping_List[6] = "onion";
+print(Shopping_List);
+
+#End
