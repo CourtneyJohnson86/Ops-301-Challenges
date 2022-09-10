@@ -1,23 +1,37 @@
-
+#!/bin/bash
 #Script Name    Clearing Logs
 #Author         Courtney Johnson
-#Date of last revision  09/02/2022
+#Date of last revision  09/09/2022
 #Declaration of variables 
 #Declaration of functions
+
+
+#Write a bash script that clears the contents of these logs:
+#/var/log/syslog
+#/var/log/wtmp
+
+
 #Main
 
 # How to view a file's contents
-
 cat testfile.txt
-
 # How to clear a file's contents
-
 cat /dev/null > testfile.txt
+#Print to screen the before and after of the contents of each file.
+echo "print the last 10 lines of the log"
+tail /var/log/syslog
 
+echo "delete log"
+cat /dev/null > syslog
 
-#Print System Logs
-/var/log/syslog
-
+echo "nothing from log should appear if successful"
+tail syslog
 #Print User Log in Information
-/var/log/wtmp
+echo "print the last 10 lines of the log in information"
+tail /var/log/syslog
 
+echo "delete log in information"
+cat /dev/null > syslog
+
+echo "no log in information should appear if successful"
+tail syslog
