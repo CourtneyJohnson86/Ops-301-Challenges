@@ -1,6 +1,6 @@
 #!/bin/bash
-#Author  Courtney Johnson  
-#Date of last revision 08/30/2022
+#Author                         Courtney Johnson  
+#Date of last revision          09/10/2022
 # Script:                       Ops 301 Ops Chall 02
 # Purpose:                      Append, date and time
 
@@ -17,8 +17,17 @@ hour=`date +%H`
 minute=`date +%M`
 second=`date +%S`
 echo `date`
-
-touch testfile.txt
-cat /var/log/syslog >> testfile.txt
 echo "Current Date: $day-$month-$year"
 echo "Current Time: $hour:$minute:$second"
+
+
+
+#Main
+touch testfile.txt
+cat /var/log/syslog >> testfile.txt
+echo "Current Date: $day-$month-$year">>testfile.txt
+echo "Appended file:"
+cat testfile.txt
+
+
+#End
