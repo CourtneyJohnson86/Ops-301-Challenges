@@ -2,3 +2,41 @@
 # Author:           Courtney Johnson            
 # Date of latest revision:      09/11/2022
 # Purpose:          Powershell script to add a new user to AD.
+
+$Attributes = @{
+
+Enabled = $true
+
+ChangePasswordAtLogon = $true
+
+UserPrincipalName = "ferdi@globeXpower.com"
+
+Name = "Franz Fredinand"
+
+GivenName = "Franz"
+
+Surname = "Ferdinand"
+
+DisplayName = "Franz Fredinand"
+
+Description = ""
+
+Office = ""
+
+Company = "GlobeX USA"
+
+Department = "TPS Department"
+
+Title = "TPS Reporting Lead"
+
+City = "Springfield"
+
+State = "OR"
+
+AccountPassword = "Spring@123" | ConvertTo-SecureString -AsPlainText -Force
+
+}
+
+New-ADUser @Attributes
+
+
