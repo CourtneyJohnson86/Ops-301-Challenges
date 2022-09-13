@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+#Script Name    Python Conditional Statements
+#Author         Courtney Johnson
+#Date of last revision  09/12/2022
+
+age = 36
+
+if(age == 15):
+  print("You are allowed to get a learners permit")
+elif(age > 16):
+  if(age >= 18) :
+    print("You are eligble for a driver's license")
+  else:
+    print("You may sit for driver's license test without permit")
