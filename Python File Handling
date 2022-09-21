@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+#Script Name    Python File Handling
+#Author         Courtney Johnson
+#Date of last revision  09/13/2022
+
+import os
+
+# Create a new file if it does not exist
+f = open("demofile.txt", "w")
+
+# How to open a file
+f = open("demofile.txt")
+
+f= open("demofile.txt", "w")
+L = ["one\n", "two\n", "three"]
+f.writelines(L)
+f.close()
+
+f= open("demofile.txt", "a")
+f.write("\n")
+f.write("four")
+
+f= open("demofile.txt", "a")
+f.write("\n")
+f.write("five")
+
+f= open("demofile.txt", "a")
+f.write("\n")
+f.write("six")
+
+f = open("demofile.txt", "r")
+print(f.readline())
+
+os.remove("demofile.txt")
+print("file was been deleted")
+
+
+#End
